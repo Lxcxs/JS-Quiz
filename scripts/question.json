@@ -1,0 +1,93 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Inside which HTML element do we put the JavaScript?",
+            "alternative-1": "<javascript>",
+            "alternative-2": "<script>",
+            "alternative-3": "<scripting>",
+            "right-alternative": "<script>"
+        },
+
+        {
+            "id": 2,
+            "question": "What is the correct JavaScript syntax to change the content of the HTML element below?",
+            "alternative-1": "document.getElement('p').innerHTML = 'Hello World!';",
+            "alternative-2": "#demo.innerHTML = 'Hello World!';",
+            "alternative-3": "document.getElementById('demo').innerHTML = 'Hello World!';",
+            "right-alternative": "document.getElementById('demo').innerHTML = 'Hello World!';"
+        },
+
+        {
+            "id": 3,
+            "question": "Where is the correct place to insert a JavaScript?",
+            "alternative-1": "The <head> section",
+            "alternative-2": "The <body> section",
+            "alternative-3": "Both the <head> section and the <body> section are correct",
+            "right-alternative": "Both the <head> section and the <body> section are correct"
+        },
+
+        {
+            "id": 4,
+            "question": "How do you create a function in JavaScript?",
+            "alternative-1": "function = myFunction()",
+            "alternative-2": "function myFunction()",
+            "alternative-3": "function:myFunction()",
+            "right-alternative": "function myFunction()"
+        },
+
+        {
+            "id": 5,
+            "question": "How to write an IF statement in JavaScript?",
+            "alternative-1": "if i = 5 then",
+            "alternative-2": "if i = 5",
+            "alternative-3": "if (i == 5)",
+            "right-alternative": "if (i == 5)"
+        },
+
+        {
+            "id": 6,
+            "question": "How can you add a comment in a JavaScript?",
+            "alternative-1": "<!--This is a comment-->",
+            "alternative-2": "//This is a comment",
+            "alternative-3": "'This is a comment",
+            "right-alternative": "//This is a comment"
+        },
+
+        {
+            "id": 7,
+            "question": "What is the correct way to write a JavaScript array?",
+            "alternative-1": "var colors = ['red', 'green', 'blue']",
+            "alternative-2": "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+            "alternative-3": "var colors = 'red', 'green', 'blue'",
+            "right-alternative": "var colors = ['red', 'green', 'blue']"
+        },
+
+        {
+            "id": 8,
+            "question": "What is the correct JavaScript syntax for opening a new window called 'w2' ?",
+            "alternative-1": "w2 = window.new('http://www.w3schools.com');",
+            "alternative-2": "w2 = window.open('http://www.w3schools.com');",
+            "alternative-3": "w2 = window.document.open('http://www.w3schools.com');",
+            "right-alternative": "window.open('http://www.w3schools.com');"
+        },
+
+        {
+            "id": 9,
+            "question": "How do you declare a JavaScript variable?",
+            "alternative-1": "var carName;",
+            "alternative-2": "v carName;",
+            "alternative-3": "variable carName;",
+            "right-alternative": "var carName;"
+        },
+
+        {
+            "id": 10,
+            "question": "How do you write 'Hello World' in an alert box?",
+            "alternative-1": "alert('Hello World!');",
+            "alternative-2": "alertBox('Hello World!');",
+            "alternative-3": "msg('Hello World!');",
+            "right-alternative": "alert('Hello World!');"
+        }
+    ]
+}
