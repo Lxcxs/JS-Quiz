@@ -2,14 +2,14 @@
     "questions": [
         {
             "id": 1,
-            "title": "How does a FOR loop start?",
+            "title": "How do you round the number 7.25, to the nearest integer?",
 
             "alternatives": [
-                "for (i = 0; i &lt;= 5)",
-                "for (i = 0; i <= 5; i++)",
-                "for i = 1 to 5"
+                "round(7.25)",
+                "Math.round(7.25)",
+                "Math.rnd(7.25)"
             ],
-            "right-alternative": "<script>"
+            "rightAlternative": "Math.round(7.25)"
         },
 
         {
@@ -20,18 +20,19 @@
                 "#demo.innerHTML = 'Hello World!';",
                 "document.getElementById('demo').innerHTML = 'Hello World!';"
             ],
-            "right-alternative": "document.getElementById('demo').innerHTML = 'Hello World!';"
+            "rightAlternative": "document.getElementById('demo').innerHTML = 'Hello World!';"
         },
 
         {
             "id": 3,
             "title": "Where is the correct place to insert a JavaScript?",
             "alternatives" : [
-                "The <head> section",
-                "The <body> section",
-                "Both the <head> section and the <body> section are correct"
+                "The < head >  section",
+                "Both the head section and the body section are correct",
+                "The < body > section"
+                
             ],
-            "right-alternative": "Both the <head> section and the <body> section are correct"
+            "rightAlternative": "Both the head section and the body section are correct"
         },
 
         {
@@ -42,7 +43,7 @@
                 "function myFunction()",
                 "function:myFunction()"
             ],
-            "right-alternative": "function myFunction()"
+            "rightAlternative": "function myFunction()"
         },
 
         {
@@ -53,18 +54,18 @@
                 "if i = 5",
                 "if (i == 5)"
             ],
-            "right-alternative": "if (i == 5)"
+            "rightAlternative": "if (i == 5)"
         },
 
         {
             "id": 6,
             "title": "How can you add a comment in a JavaScript?",
             "alternatives" : [
-                "<!--This is a comment-->",
+                "< !--This is a comment-- >",
                 "//This is a comment",
                 "'This is a comment"
             ],
-            "right-alternative": "//This is a comment"
+            "rightAlternative": "//This is a comment"
         },
 
         {
@@ -75,7 +76,7 @@
                 "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
                 "var colors = 'red', 'green', 'blue'"
             ],
-            "right-alternative": "var colors = ['red', 'green', 'blue']"
+            "rightAlternative": "var colors = ['red', 'green', 'blue']"
         },
 
         {
@@ -86,7 +87,7 @@
                 "w2 = window.open('http://www.w3schools.com');",
                 "w2 = window.document.open('http://www.w3schools.com');"
             ],
-            "right-alternative": "window.open('http://www.w3schools.com');"
+            "rightAlternative": "w2 = window.open('http://www.w3schools.com');"
         },
 
         {
@@ -97,7 +98,7 @@
                 "v carName;",
                 "variable carName;"
             ],
-            "right-alternative": "var carName;"
+            "rightAlternative": "var carName;"
         },
 
         {
@@ -108,7 +109,7 @@
                 "alertBox('Hello World!');",
                 "msg('Hello World!');"
             ],
-            "right-alternative": "alert('Hello World!');"
+            "rightAlternative": "alert('Hello World!');"
         }
     ]
 }

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -37,13 +37,14 @@ main {
 
 section.content {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 35em;
-    padding: 0 2em;
+    padding: 0 10em;
     display: flex;
 
 }
 div.question-box {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,7 +59,7 @@ div.question-box {
         height: 2.5em;
         display: grid;
         place-items: center;
-        border: 2px solid yellow;
+        border: 2px solid gold;
         border-right: none;
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
@@ -67,9 +68,14 @@ div.question-box {
 
     .js-box.active {
         border: 2px solid tomato;
+        background: rgba(255, 99, 71, 0.452);
         border-right: none;
-        background-color: rgba(255, 99, 71, 0.164);
+        text-shadow: 2px 2px 2px black;
     }
+}
+div.question-box.activeQuiz {
+    opacity: 1;
+    transition: all .5s;
 }
 
 div.content-box {
@@ -79,54 +85,101 @@ div.content-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 5px solid yellow;
+    border: 5px solid gold;
     border-radius: 1em;
-    
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    padding: 1em 3em;
+    font-size: 1.5em;
+    color: tomato;
+    font-weight: bold;
+    background: gold;
+    border: 0;
+    border-radius: 0.7em;
+    box-shadow: 0px 10px 0px rgb(110, 85, 20);
+    text-shadow: 2px 1px 0px rgba(94, 22, 22, 0.692);
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(6px);
+        box-shadow: 0px 4px 0px rgb(110, 85, 20);
+    }
+}
+
+div.welcome {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        text-shadow: 0px 0px 5px rgb(158, 134, 0);
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+
+
+}
+div.welcome.activeQuiz {
+    display: block;
+}
+
+div.quiz {
+    display: none;
+
     h1 {
         font-size: 2em;
         font-weight: 600;
+        text-transform: uppercase;
     }
 
     form {
         margin-top: 2em;
 
         div {
-            margin-bottom: 1.5em;
+            margin-bottom: 0.5em;
 
-            input[type=radio] {
-                height: 1.2rem;
-                width: 1.2rem;
-                margin-right: 0.5rem;
-            }
             label {
                 cursor: pointer;
                 font-size: 1.5em;
-                font-weight: 100;
+                font-weight: normal;
+                display: block;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.116);
+                padding: 0.5em 1em;
+                border-radius: 0.3em;
                 transition: all .2s;
                 &:hover {
-                    color: tomato;
+                    color: black;
+                    background-color: gold;
                 }
             }
         }
-
-        input[type=submit] {
-            cursor: pointer;
-            background-color: yellow;
-            box-shadow: 0 7px 0 rgb(160, 160, 0);
-            border: none;
-            padding: 0.5em 2em;
-            font-size: 1.2em;
-            border-radius: 0.5em;
-            color: tomato;
-            font-weight: bold;
-            transition: all .3s;
-
-            &:hover {
-                transform: translateY(5px);
-                box-shadow: 0 3px 0 rgb(160, 160, 0);
-            }
-        }
     }
+}
+div.quiz.activeQuiz {
+    display: block;
+}
+
+div.finish {
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+
+    h1 {
+        font-size: 1.5em;
+
+        margin-bottom: 1em;
+    }
+
+    span#note {
+        color: gold;
+    }
+    
+}
+div.finish.activeQuiz {
+    display: block;
 }
 
 
