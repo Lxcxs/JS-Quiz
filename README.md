@@ -1,1 +1,1 @@
-You need to open index on a server, because i use fetch api.
+You need to open index on a server to work, because i use fetch api.
