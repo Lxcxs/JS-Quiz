@@ -1,17 +1,30 @@
 async function initQuiz() {
-    const question = document.querySelector('#title');
-    const alternative = document.querySelectorAll('.js-input');
-    const button = document.querySelector('#submit');
+    const questionTitle = document.querySelector('#title');
+    const alternatives = document.querySelectorAll('.js-input');
+    const label = document.querySelectorAll('#js-label');
+    const form = document.querySelector('.form');
     const json_data = await fetch('../scripts/question.json').then(res => res.json());
-    let cont = 1
+    let currAnswer = '';
+    let progress = '0/10';
 
-    function getQuizValues() {
-        
-    }
+    questionTitle.innerHTML = await json_data.questions[0].title;
+    label[0].innerHTML = json_data.questions[0].alternatives[0];
+    label[1].innerHTML = json_data.questions[0].alternatives[1];
+    label[2].innerHTML = json_data.questions[0].alternatives[2];
 
-    button.addEventListener('click', getQuizValues)
+    form.addEventListener('submit', (x) => {
+        x.preventDefault();
+        questionTitle.innerHTML = '';
 
-    console.log(json_data)
+        for (var i = 0; i < alternatives.length; i++) {
+
+            if(alternatives[i].checked) {
+                currAnswer = label[i].innerHTML;
+                console.log(currAnswer)
+            }
+        }
+
+    });
 
 }
 
